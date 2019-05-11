@@ -1,0 +1,38 @@
+{
+    "lang": "javascript",
+    "version": "1.0.0",
+    "abi": [
+        {
+            "name": "guess",
+            "args": [
+                "string"
+            ],
+            "amountLimit": [
+                {
+                    "token": "iost",
+                    "val": "100"
+                },
+                {
+                    "token": "ram",
+                    "val": "1000"
+                }
+            ]
+        },
+        {
+            "name": "deposit",
+            "args": [
+                "string"
+            ],
+            "amountLimit": [
+                {
+                    "token": "iost",
+                    "val": "10000"
+                },
+                {
+                    "token": "ram",
+                    "val": "1000"
+                }
+            ]
+        }
+    ]
+}
