@@ -16,7 +16,9 @@ class main {
             const contractBalance = blockchain.call("token.iost", "balanceOf", ["iost", blockchain.contractName()]);
 
             const reward = new Float64(contractBalance[0]).div(10).toFixed(8);
+
             blockchain.receipt(`{"name": "${tx.publisher}", "guess": "${guess}", "result": "correct", "reward": "${reward}", "balance": "${contractBalance}"}`);
+
             blockchain.withdraw(tx.publisher, reward, 'You did it!');
             return "CORRECT! Great job!";
         }
